@@ -54,10 +54,10 @@ const CropsDataPage = () => {
     
     // Aggregate crop data for each unique year, computing maximum and minimum crop productions.
     const aggregateData = Object.values(uniqueDates).map((item: any, index: any) => {
-        const maxCrop = item.filter((i: any) => i.crop_prod != '').reduce((acc: any, cur: any) => {
+        const maxCrop = item.filter((i: any) => i.crop_prod !== '').reduce((acc: any, cur: any) => {
             return cur.crop_prod > acc.crop_prod ? cur : acc
         }, { crop_prod: 0 })
-        const minCrop = item.filter((i: any) => i.crop_prod != '').reduce((acc: any, cur: any) => {
+        const minCrop = item.filter((i: any) => i.crop_prod !== '').reduce((acc: any, cur: any) => {
             return cur.crop_prod > acc.crop_prod ? acc : cur
         }, {})
         return { max_crop: maxCrop.crop_name, min_crop: minCrop.crop_name, year: item[0].year }
@@ -78,10 +78,10 @@ const CropsDataPage = () => {
     
     //Aggregate average crop yield and cultivation area for each unique crop
     const aggregateAverageData = Object.values(uniqueCrops).map((item: any, index: any) => {
-        const sumYield = item.filter((i: any) => i.crop_yield != '').reduce((acc: any, cur: any) => {
+        const sumYield = item.filter((i: any) => i.crop_yield !== '').reduce((acc: any, cur: any) => {
             return acc + cur.crop_yield
         }, 0)
-        const sumCult = item.filter((i: any) => i.crop_cult != '').reduce((acc: any, cur: any) => {
+        const sumCult = item.filter((i: any) => i.crop_cult !== '').reduce((acc: any, cur: any) => {
             return acc + cur.crop_cult
         }, 0)
         return { avg_yield: (sumYield / item.length).toFixed(3), avg_cult: (sumCult / item.length).toFixed(3),
