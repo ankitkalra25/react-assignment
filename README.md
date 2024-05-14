@@ -1,6 +1,8 @@
 
 ![react-assignment](https://github.com/ankitkalra25/react-assignment/assets/45238515/d30428f8-01e0-4a0a-b83b-0e061bfc0771)
 
+## Demo
+[React Assigment](https://react-assignment25.netlify.app/)
 Steps to setup react app in local
 1.Clone the repository:
 git clone https://github.com/ankitkalra25/react-assignment.git
