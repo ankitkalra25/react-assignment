@@ -4,7 +4,7 @@
 ## Demo
 [React Assigment](https://react-assignment25.netlify.app/)
 
-##Steps to setup react app in local
+## Steps to setup react app in local
 1.Clone the repository:
 git clone https://github.com/ankitkalra25/react-assignment.git
 
@@ -17,7 +17,7 @@ yarn install
 4.Command to run the project:
 yarn start
 
-##Steps to build react app and run
+## Steps to build react app and run
 1.Clone the repository:
 git clone https://github.com/ankitkalra25/react-assignment.git
 
